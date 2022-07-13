@@ -8,7 +8,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDAO {
+import model.User;
+
+public class UserDao {
 
 	private final String SELECT_ALL = "SELECT user.name, team.name FROM user"
 			+ " JOIN team ON user.team_id = team.team_id";
